@@ -1,28 +1,18 @@
-import java.util.Scanner;
-public class Main {
-Scanner sc = new Scanner(System.in);
-
- 
-
-           //function to checkPalindrome
-
-       public void checkPalindrome()  {
-
-             int num = sc.nextInt();
-            int newNum = 0, reminder, temp;
-            temp = num;
-            //Reverse the digit's of the number.
-            while(temp != 0){
-                  reminder = temp % 10;
-                  newNum = newNum*10 + reminder;
-                  temp = temp/10;
-            
-            //Check if reverse of all digit's of the number
-            //is equal to the given number or not.
-            if(newNum == num){
-                  System.out.println(num +" is palindrome.");
-            }else{
-                  System.out.println(num +" is not palindrome.");
-            }
-      }   
-    }
+import java.util.*;   
+class PalindromeExample2  
+{  
+   public static void main(String args[])  
+   {  
+      String original, reverse = ""; // Objects of String class  
+      Scanner in = new Scanner(System.in);   
+      //System.out.println("Enter a string/number to check if it is a palindrome");  
+      original = in.nextLine();   
+      int length = original.length();   
+      for ( int i = length - 1; i >= 0; i-- )  
+         reverse = reverse + original.charAt(i);  
+      if (original.equals(reverse))  
+         System.out.println("Entered number is a palindrome.");  
+      else  
+         System.out.println("Entered number isn't a palindrome.");   
+   }  
+}  
