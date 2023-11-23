@@ -19,4 +19,4 @@ import java.util.Scanner;
                         else 
                         System.out.println(num +" is not a prime number"); 
               } 
- } 
+ }
