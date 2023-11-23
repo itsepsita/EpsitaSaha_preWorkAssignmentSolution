@@ -15,4 +15,4 @@ class Palindrome
       else  
          System.out.println("Entered number isn't a palindrome.");   
    }  
-}  
+}
